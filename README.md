@@ -1,2 +1,1 @@
-# Moment.js
-Comparing 3 different timezones.
+Compilation of Javascript codes
