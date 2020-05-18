@@ -10,10 +10,16 @@ function startTime() {
     s1 = checkTime(s1);
     
     var h2 = d.zone("+13:00").format("hh");
-    var m2 = d.zone("-07:00").format("m");
-    var s2 = d.zone("-07:00").format("ss");
+    var m2 = d.zone("+13:00").format("m");
+    var s2 = d.zone("+13:00").format("ss");
     m2 = checkTime(m2);
     s2 = checkTime(s2);
+
+    var h3 = d.zone("+12:00").format("hh");
+    var m3 = d.zone("+12:00").format("m");
+    var s3 = d.zone("+12:00").format("ss");
+    m3 = checkTime(m3);
+    s3 = checkTime(s3);
 
     document.getElementById('date1').innerHTML = today.toDateString("YYYY");
     document.getElementById('timer1').innerHTML = today.toLocaleTimeString();
@@ -22,9 +28,15 @@ function startTime() {
     document.getElementById('timer2').innerHTML =
     h1 + ":" + m1 + ":" + s1 + " " + d.zone("-04:00").format("A");
 
-    document.getElementById('date3').innerHTML = d.zone("07:00").format("ddd MMMM D YYYY");
+    document.getElementById('date3').innerHTML = d.zone("+13:00").format("ddd MMMM D YYYY");
     document.getElementById('timer3').innerHTML =
-    h2 + ":" + m2 + ":" + s2 + " " + d.zone("07:00").format("A");
+    h2 + ":" + m2 + ":" + s2 + " " + d.zone("+13:00").format("A");
+
+    document.getElementById('date4').innerHTML = d.zone("07:00").format("ddd MMMM D YYYY");
+    document.getElementById('timer4').innerHTML =
+    h3 + ":" + m3 + ":" + s3 + " " + d.zone("07:00").format("A");
+    
+    var t1 = setTimeout(startTime, 500);
   }
 
   function checkTime(i) {
