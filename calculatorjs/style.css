@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  grid-gap: 5px;
+  padding: 5px;
+  margin:auto;
+  }
+  
+button{
+    width: 100px;
+    height: 100px;
+}
+

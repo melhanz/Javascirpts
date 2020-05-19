@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/cosmo/bootstrap.min.css" integrity="sha256-rXpIL674TvYOUw0PG2bXssX5fO2HK0kFZhy2c/z2ie4=" crossorigin="anonymous" />
+    <style>
+
+        .calc-form{
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid rgb(0, 0, 0);
+            margin: auto;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            background-color: rgb(151, 153, 155);
+            padding: 5px;
+        }
+        button{
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="calc-form">
+    <!-- <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;"> -->
+        <input class="form-control" id="readOnlyInput" type="text" placeholder="Calculator" readonly="">
+            <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+        <div class="container">
+        <button>clear</button>
+        <button>x</button>
+        <button>/</button>
+        <button>c</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>0</button>
+        <button>.</button>
+        <button>9</button>
+        <button>9</button>
+        <button>Enter</button>
+        </div>                
+    <!-- </div>   -->
+   </div> 
+        
+
+</body>
+</html>
