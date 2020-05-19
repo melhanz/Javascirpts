@@ -1,1 +1,1 @@
-Compilation of Javascript codes
+Compilation of Javascript projects
