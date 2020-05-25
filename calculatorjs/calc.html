@@ -59,22 +59,22 @@
 <body>
     <div class="calc-form" id="calc-form">
         <div class="display">0</div>
-        <div class="keys" id="keys">
-            <button class="btn operator" id="btn" value="+" onclick="dis('+')">+</button>
-            <button class="btn operator" id="btn" value="-" onclick="dis('-')">-</button>
-            <button class="btn operator" id="btn" value="*" onclick="dis('*')">&times;</button>
-            <button class="btn operator" id="btn" value="/" onclick="dis('/')">÷</button>
-            <button class="btn" onclick="dis('7')">7</button>
-            <button class="btn" onclick="dis('8')">8</button>
-            <button class="btn" onclick="dis('9')">9</button>
-            <button class="btn" onclick="dis('4')">4</button>
-            <button class="btn" onclick="dis('5')">5</button>
-            <button class="btn" onclick="dis('6')">6</button>
-            <button class="btn" onclick="dis('1')">1</button>
-            <button class="btn" onclick="dis('2')">2</button>
-            <button class="btn" onclick="dis('3')">3</button>
-            <button class="btn" onclick="dis('0')">0</button>
-            <button class="btn" onclick="dis('.')">.</button>
+        <div class="keys" id="calc-key">
+            <button class="btn operator" data-action="add">+</button>
+            <button class="btn operator" data-action="subtract">-</button>
+            <button class="btn operator" data-action="multiply">&times;</button>
+            <button class="btn operator" data-action="divide">÷</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
             <button class="btn clear" data-action="clear">AC</button>
             <button class="btn equal" data-action="calculate">=</button>
 
