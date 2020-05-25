@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-GKugkVcT8wqoh3M8z1lqHbU+g6j498/ZT/zuXbepz7Dc09/otQZxTimkEMTkRWHP" crossorigin="anonymous">
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+    </style>
+    <script>
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => console.log(data));
+    </script>
+</head>
+<body>
+    
+    <div class="container"> 
+        <form>
+            <fieldset>
+              <legend>Add Question</legend>
+              <div class="form-group">
+                <label for="exampleTextarea">Question</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Add your Question"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputEmail1">Answer</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter the answer">
+                </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+          </form>
+    </div>
+</body>
+</html>

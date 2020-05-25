@@ -1,0 +1,11 @@
+[
+    {
+    "question": "Who invented JavaScript?",
+    "answers": {
+      "a": "Douglas Crockford",
+      "b": "Sheryl Sandberg",
+      "c": "Brendan Eich"
+    },
+    "correctAnswer": "c"
+  }
+]
